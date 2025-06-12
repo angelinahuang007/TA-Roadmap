@@ -1,0 +1,67 @@
+site_name: Technical Artist Roadmap
+site_description: A comprehensive guide and resource collection for aspiring Technical Artists in the game industry
+site_author: TA-Roadmap Contributors
+repo_url: https://github.com/yourusername/TA-Roadmap
+repo_name: TA-Roadmap
+site_url: https://yourusername.github.io/TA-Roadmap/  # Update this with your GitHub username
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/TA-Roadmap
+      name: GitHub Repository
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/tech-art
+      name: Discord Community
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: getting-started/introduction.md
+    - Core Skills: getting-started/core-skills.md
+  - Specializations:
+    - Pipeline: specializations/pipeline.md
+    - Shaders & Graphics: specializations/shaders-and-graphics.md
+    - Animation: specializations/animation.md
+    - VFX: specializations/vfx.md
+    - Tools: specializations/tools.md
+  - Resources:
+    - Learning Path: resources/learning-path.md
+    - Community: resources/community.md
+    - Tools & Software: resources/tools-software.md
+  - Contributing: contributing.md 
