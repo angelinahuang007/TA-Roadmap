@@ -3,7 +3,7 @@ site_description: A comprehensive guide and resource collection for aspiring Tec
 site_author: TA-Roadmap Contributors
 repo_url: https://github.com/angelina007huang/TA-Roadmap
 repo_name: TA-Roadmap
-site_url: https://angelina007huang.github.io/TA-Roadmap/  # Update this with your GitHub username
+site_url: https://angelina007huang.github.io/TA-Roadmap/
 
 theme:
   name: material
@@ -13,6 +13,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+  language: en
   palette:
     - scheme: default
       primary: indigo
@@ -40,6 +41,35 @@ markdown_extensions:
   - toc:
       permalink: true
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          nav_translations:
+            Home: 首页
+            Getting Started: 入门指南
+            Introduction: 简介
+            Core Skills: 核心技能
+            Specializations: 专业方向
+            Pipeline: 管线开发
+            Shaders & Graphics: 着色器和图形
+            Animation: 动画技术
+            VFX: 特效制作
+            Tools: 工具开发
+            Resources: 资源
+            Learning Path: 学习路径
+            Community: 社区
+            Tools & Software: 工具和软件
+            Contributing: 贡献指南
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -52,8 +82,8 @@ extra:
 nav:
   - Home: index.md
   - Getting Started:
-    - Introduction: getting-started/introduction.md
-    - Core Skills: getting-started/core-skills.md
+    - ReadGuide: readguide.md
+    - Core Skills: core-skills.md
   - Specializations:
     - Pipeline: specializations/pipeline.md
     - Shaders & Graphics: specializations/shaders-and-graphics.md

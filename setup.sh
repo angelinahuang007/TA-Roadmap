@@ -11,16 +11,18 @@ pip install -r requirements.txt
 
 # Initialize MkDocs
 echo "Setting up MkDocs..."
-mkdir -p docs/{getting-started,specializations,resources}
+mkdir -p docs/{en,zh}/{getting-started,specializations,resources}
 
-# Create necessary directories for content
-echo "Creating content directories..."
-for dir in docs/getting-started docs/specializations docs/resources; do
-    if [ ! -d "$dir" ]; then
-        mkdir -p "$dir"
-    fi
-done
+# Set up i18n structure
+echo "Setting up multilingual structure..."
+chmod +x setup_i18n.sh
+./setup_i18n.sh
 
 echo "Setup complete! To start the development server:"
 echo "1. Activate the virtual environment: source venv/bin/activate"
-echo "2. Run the development server: mkdocs serve" 
+echo "2. Run the development server: mkdocs serve"
+echo ""
+echo "The site will be available at http://127.0.0.1:8000"
+echo "Language versions will be at:"
+echo "- English: http://127.0.0.1:8000/en/"
+echo "- Chinese: http://127.0.0.1:8000/zh/" 

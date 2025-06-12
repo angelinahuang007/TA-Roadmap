@@ -1,17 +1,15 @@
-# Preface
-Self-Study Path for Technical Artists
-If you have a deep passion for both computer science and art and can’t bear to give up either, then this guide is meant to help you chart a self-learning path toward employment. The roles and responsibilities of technical artists vary across companies, but through your own exploration, you’ll be able to find the intersection of passion and value that suits you best.
-Thanks to the CS Self-Learning Guide, from which I’ve gained a lot of insight—this guide’s structure is also inspired by it: https://csdiy.wiki/
+# 技术美术自学路线 
 
-As a student coming from an interdisciplinary background in computer science and art, the hardest challenge is defining your identity. There are countless paths in the field of computer science, and just as many in art, but there are very few established paths that combine both. This is partly because each discipline on its own demands a full commitment of time and energy—let alone mastering both. As a result, trying to study both may lead to not excelling in either.
+如果你也对计算机和艺术抱有双重热爱，对哪部分都无法割舍，那本书是为自己就业的自学指南。各公司的技术美术的岗位细分都不完全一样，但相信你在探索的过程中能找到自己热爱与价值的结合。
+感谢 CS自学指南，从中收获了非常多，本书结构也参考此书：https://csdiy.wiki/
 
-Fortunately, in this age of AI, it’s easier than ever to get started in a new field. If you have the courage to imagine and take action, anything is possible. In the next 10 years, we may truly witness the rise of interdisciplinary talents.
+作为计算机和艺术跨专业的学生来说，最困难的就是对自己的定位-有非常多计算机的路径，也有非常多艺术的路径，但跨专业的路径非常少。这一部分是因为这两个学科单独本身就足够一个人投入全部精力去研究，更别说把两个专业都学好。两个专业都学的后果就是哪个都不精。幸运的是，在这个AI兴起的时代，入门一个专业的难度前所未有地低。你只要敢想敢执行，一切皆有可能。在未来的10年，或许我们能真正看到跨专业人才的兴起。
 
-## What is a Technical Artist?
+## 技术美术职业路径
 
-A Technical Artist (TA) bridges the gap between artists and programmers in game development. They combine artistic vision with technical expertise to solve complex problems, optimize workflows, and ensure the seamless integration of art assets into game engines.
+技术美术大致分为动画、管线、
 
-## :rocket: Quick Start
+## 技术美术基础
 
 Choose your path:
 
