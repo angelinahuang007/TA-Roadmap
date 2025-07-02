@@ -1,9 +1,9 @@
 site_name: Technical Artist Roadmap
 site_description: A comprehensive guide and resource collection for aspiring Technical Artists in the game industry
 site_author: TA-Roadmap Contributors
-repo_url: https://github.com/angelina007huang/TA-Roadmap
+repo_url: https://github.com/angelinahuang007/TA-Roadmap
 repo_name: TA-Roadmap
-site_url: https://angelina007huang.github.io/TA-Roadmap/
+site_url: https://angelinahuang007.github.io/TA-Roadmap/
 
 theme:
   name: material
