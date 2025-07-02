@@ -8,12 +8,11 @@ site_url: https://angelina007huang.github.io/TA-Roadmap/
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.sections
-    - navigation.top
+    - navigation.sidebar
     - search.suggest
     - search.highlight
-  language: en
+  language: zh
   palette:
     - scheme: default
       primary: indigo
@@ -29,46 +28,52 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - footnotes
   - toc:
       permalink: true
 
 plugins:
-  - search
+  - search:
+      lang:
+        - zh
+        - en
   - i18n:
       docs_structure: folder
       languages:
-        - locale: en
+        - locale: zh
           default: true
+          name: 简体中文
+          build: true
+        - locale: en
           name: English
           build: true
-        - locale: zh
-          name: 中文
-          build: true
           nav_translations:
-            Home: 首页
-            Getting Started: 入门指南
-            Introduction: 简介
-            Core Skills: 核心技能
-            Specializations: 专业方向
-            Pipeline: 管线开发
-            Shaders & Graphics: 着色器和图形
-            Animation: 动画技术
-            VFX: 特效制作
-            Tools: 工具开发
-            Resources: 资源
-            Learning Path: 学习路径
-            Community: 社区
-            Tools & Software: 工具和软件
-            Contributing: 贡献指南
+            首页: Home
+            入门指南: Getting Started
+            前言: Preface
+            核心技能: Core Skills
+            专业方向: Specializations
+            管线开发: Pipeline
+            着色器和图形: Shaders & Graphics
+            动画技术: Animation
+            特效制作: VFX
+            工具开发: Tools
+            资源: Resources
+            学习路径: Learning Path
+            社区: Community
+            工具和软件: Tools & Software
+            贡献指南: Contributing
+            
 
 extra:
   social:
@@ -80,18 +85,22 @@ extra:
       name: Discord Community
 
 nav:
-  - Home: index.md
-  - Getting Started:
-    - ReadGuide: readguide.md
-    - Core Skills: core-skills.md
-  - Specializations:
-    - Pipeline: specializations/pipeline.md
-    - Shaders & Graphics: specializations/shaders-and-graphics.md
-    - Animation: specializations/animation.md
-    - VFX: specializations/vfx.md
-    - Tools: specializations/tools.md
-  - Resources:
-    - Learning Path: resources/learning-path.md
-    - Community: resources/community.md
-    - Tools & Software: resources/tools-software.md
-  - Contributing: contributing.md 
+  - 技术美术学习路线: 
+    - 前言: index.md
+    - 核心技能: core-skills.md
+    - 管线开发: 
+      - 技术1: pipeline/pipeline.md
+      - 技术2: pipeline/pipeline.md
+    - 着色器和图形: 
+      - 技术1: shadersGraphics/shaders-and-graphics.md
+      - 技术2: shadersGraphics/shaders-and-graphics.md
+    - 动画技术: 
+      - 技术1: animation/animation.md
+      - 技术2: animation/animation.md
+    - 特效制作: vfx/vfx.md
+    - 工具开发: tools/tools.md
+    - 资源:
+      - 学习路径: resources/learning-path.md
+      - 社区: resources/community.md
+      - 工具和软件: resources/tools-software.md
+    - 贡献指南: contributing.md
