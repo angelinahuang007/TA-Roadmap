@@ -30,3 +30,9 @@ Copy SOP、四元数旋转、Intrinsics、Primuv/xyzdist查询、点云过滤
 - 实例化控制：随机缩放、方向旋转（四元数）
 - 查询几何（primuv、xyzdist、nearpoints）
 - 用点云实现平滑和过滤
+
+
+tags:
+
+- Pipeline
+- Houdini

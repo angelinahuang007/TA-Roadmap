@@ -87,7 +87,7 @@ extra:
 nav:
   - 技术美术学习路线: 
     - 前言: index.md
-    - 核心技能: core-skills.md
+    - 核心技能: 基础知识.md
     - 管线开发: 
       - 技术1: pipeline/pipeline.md
       - 技术2: pipeline/pipeline.md

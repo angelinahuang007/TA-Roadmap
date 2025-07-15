@@ -5,52 +5,18 @@
 
 作为计算机和艺术跨专业的学生来说，最困难的就是对自己的定位-有非常多计算机的路径，也有非常多艺术的路径，但跨专业的路径非常少。这一部分是因为这两个学科单独本身就足够一个人投入全部精力去研究，更别说把两个专业都学好。两个专业都学的后果就是哪个都不精。幸运的是，在这个AI兴起的时代，入门一个专业的难度前所未有地低。你只要敢想敢执行，一切皆有可能。在未来的10年，或许我们能真正看到跨专业人才的兴起。
 
-## 技术美术职业路径
+## 基础知识与技术经验
 
-技术美术大致分为动画、管线、
+游戏行业，或者说对于技术美术学习的学习材料眼花缭乱，新软件、新技术层出不穷。更可怕的是，知识和技术随着技术发展总是加速贬值。曾经或许完全掌握了的specular-glossiness工作流随着技术迭代就再也没有发挥的空间。
 
-## 技术美术基础
+我们这个学习路径就是意识到这个问题，除了对于软件和技术教程的整理，更重要的是对于基础知识，可迁移基础的整理是我们快速掌握新技术的关键。
 
-Choose your path:
+见[基础知识](基础知识.md)。
 
-- [Core Skills](getting-started/core-skills.md) - Essential skills for all Technical Artists
-- [Pipeline Development](specializations/pipeline.md) - Focus on asset pipelines and workflow optimization
-- [Shaders & Graphics](specializations/shaders-and-graphics.md) - Specialize in real-time rendering and materials
-- [Animation Systems](specializations/animation.md) - Master rigging and animation tools
-- [Visual Effects](specializations/vfx.md) - Create stunning real-time VFX
-- [Tools Development](specializations/tools.md) - Build custom tools for artists
+## 贡献
 
-## :bulb: Why Technical Art?
+本路线图是一个社区共同努力的成果！我们欢迎所有水平的技术美术师参与贡献。请参阅我们的 [贡献指南](contributing.md) 开始你的旅程。
 
-Technical Artists are crucial to modern game development because they:
+## 许可证
 
-- Bridge the gap between art and engineering teams
-- Optimize art production workflows
-- Solve complex technical challenges
-- Ensure visual quality and performance
-- Enable artists to work efficiently
-
-## :books: How to Use This Guide
-
-1. Start with the [Introduction](getting-started/introduction.md) to understand the role
-2. Master the [Core Skills](getting-started/core-skills.md)
-3. Choose a specialization path
-4. Follow the learning resources and practice projects
-5. Join the technical art community
-
-## :handshake: Contributing
-
-This roadmap is a community effort! We welcome contributions from Technical Artists of all levels. See our [Contributing Guide](contributing.md) to get started.
-
-## :memo: License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/yourusername/TA-Roadmap/blob/main/LICENSE) file for details.
-
----
-
-!!! tip "Stay Connected"
-    Join our community:
-    
-    - [Technical Artist Forum](https://tech-artists.org)
-    - [Discord Community](https://discord.gg/tech-art)
-    - [GitHub Discussions](https://github.com/yourusername/TA-Roadmap/discussions) 
+本项目基于 MIT 许可证 - 详情请查看 [LICENSE](https://github.com/yourusername/TA-Roadmap/blob/main/LICENSE) 文件。
