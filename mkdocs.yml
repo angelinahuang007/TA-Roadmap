@@ -43,12 +43,7 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - search:
-      lang:
-        - zh
-        - en
   - i18n:
-      docs_structure: folder
       languages:
         - locale: zh
           default: true
@@ -73,7 +68,10 @@ plugins:
             社区: Community
             工具和软件: Tools & Software
             贡献指南: Contributing
-            
+  - search:
+      lang:
+        - zh
+        - en
 
 extra:
   social:
@@ -86,21 +84,48 @@ extra:
 
 nav:
   - 技术美术学习路线: 
-    - 前言: index.md
-    - 核心技能: 基础知识.md
-    - 管线开发: 
+    - 前言-- --: index.md
+    - 核心技能-- --: 基础知识.md
+    - 计算机基础-- --:
+      - 数据结构: 
+        - 数据结构总览: 计算机基础/数据结构/数据结构.md
+      - 算法: 计算机基础/算法/算法.md
+      - 编程语言: 计算机基础/编程语言/编程语言.md
+      - 计算机系统: 计算机基础/计算机系统/计算机系统.md
+      - 软件工程: 计算机基础/软件工程/软件工程.md
+      - 数学基础: 计算机基础/数学基础/数学基础.md
+    - 艺术基础-- --: 
+      - 艺术基础: 艺术基础/艺术基础.md
+      - 配色理论: 艺术基础/配色/配色理论.md
+      - 构图原理: 艺术基础/构图原理/构图原理.md
+      - 设计原则: 艺术基础/设计原则/设计原则.md
+      - 视觉元素: 艺术基础/视觉元素/视觉元素.md
+      - 设计心理学: 艺术基础/设计心理学/设计心理学.md
+      - 数字设计: 艺术基础/数字设计/数字设计.md
+    - 管线开发-- --: 
       - 技术1: pipeline/pipeline.md
       - 技术2: pipeline/pipeline.md
-    - 着色器和图形: 
+    - 着色器和图形-- --: 
       - 技术1: shadersGraphics/shaders-and-graphics.md
       - 技术2: shadersGraphics/shaders-and-graphics.md
-    - 动画技术: 
+    - 动画技术-- --: 
       - 技术1: animation/animation.md
       - 技术2: animation/animation.md
-    - 特效制作: vfx/vfx.md
-    - 工具开发: tools/tools.md
-    - 资源:
-      - 学习路径: resources/learning-path.md
-      - 社区: resources/community.md
-      - 工具和软件: resources/tools-software.md
-    - 贡献指南: contributing.md
+    - 特效制作-- --: 
+      - 技术1: vfx/vfx.md
+      - 技术2: vfx/vfx.md
+    - 工具开发-- --: 
+      - 技术1: tools/tools.md
+      - 技术2: tools/tools.md
+    - 程序化生成-- --: 
+      - Houdini: PCG/Houdini.md
+      - Joy of Vex: PCG/Houdini - Joy of Vex.md
+      - VEX: PCG/VEX.md
+    - 资源推荐-- --:
+      - 学习路径: 资源推荐/learning-path.md
+      - 社区: 资源推荐/community.md
+      - 工具和软件: 资源推荐/tools-software.md
+      - 好书推荐：好书推荐.md
+      - 论文推荐：论文推荐.md
+      - 未分类资源：未分类资源.md
+    - 贡献指南-- --: contributing.md
