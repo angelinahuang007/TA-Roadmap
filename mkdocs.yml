@@ -41,6 +41,8 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - i18n:

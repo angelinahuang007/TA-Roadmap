@@ -56,3 +56,29 @@
 ## 许可证
 
 本项目基于 MIT 许可证 - 详情请查看 [LICENSE](https://github.com/yourusername/TA-Roadmap/blob/main/LICENSE) 文件。
+
+## Code Block Test
+
+=== "Python"
+
+    ```python
+    def prefix_sum(arr):
+    prefix = [0]*(len(arr)+1)
+    for i in range(len(arr)):
+        prefix[i+1] = prefix[i] + arr[i]
+    return prefix
+    ```
+=== "C++"
+
+    ```cpp
+    #include <vector>
+    using namespace std;
+
+    vector<int> prefix_sum(vector<int>& arr) {
+        vector<int> prefix(arr.size()+1, 0);
+        for (int i=0; i<arr.size(); i++) {
+            prefix[i+1] = prefix[i] + arr[i];
+        }
+        return prefix;
+    }
+    ```
