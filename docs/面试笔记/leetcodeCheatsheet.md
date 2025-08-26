@@ -13,13 +13,13 @@ Some are just a note to remember, but some like DP logic and backtracking logic 
 
 === "python"
     ```python
-    def samplePrefix(arr):
+    def samplePrefix(arr：List[int])->int:
         n = len(arr)
         prefix = [0]*(n+1)
         for i in range(n):
             prefix[i+1] = prefix[i] + nums[i]
 
-        sumofNum = prefix[r] - prefix[l] # inclusive l and exclusive r        
+        # sumofNum = prefix[r] - prefix[l], inclusive l and exclusive r        
     ```
 === "c++"
 
@@ -1215,12 +1215,14 @@ use fixtures, parametrized tests, and exception testing
 
 Think out loud - explain reasoning step by step, even final code did not work, interviewer values clarity + approach
 
+Start with Brute force - outline simple solution first, and then optimize
+
 State invariants - mention what must stay true after each iteration or recursion
 
-Edge case first - 
+Edge case first - get edge case handled at the beginning of the function
+
 
 ## Git Repo Notes
 
-### maybe want
-
-Z-function/Manacher, Fenwick tree, segment tree
+things to add later:
+Z-function/Manacher, segment tree
