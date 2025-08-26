@@ -76,10 +76,10 @@ plugins:
         - en
   - redirects:
       redirect_maps:
-        cheatsheet/index.md: "计算机基础/数据结构/数据结构.md"
+        cheatsheet/index.md: "面试笔记/leetcodeCheatsheet.md"
         # If you keep language prefixes in URLs, add explicit per-lang aliases:
-        en/cheatsheet/index.md: "/计算机基础/数据结构/数据结构.en.md"
-        zh/cheatsheet/index.md: "计算机基础/数据结构/数据结构.md"
+        en/cheatsheet/index.md: "/面试笔记/leetcodeCheatsheet.en.md"
+        zh/cheatsheet/index.md: "面试笔记/leetcodeCheatsheet.md"
 extra:
   social:
     - icon: fontawesome/brands/github
