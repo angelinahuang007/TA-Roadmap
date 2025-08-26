@@ -66,7 +66,7 @@ def twopt(nums, target): # find two num in sorted array that sum to target
 		return (-1, -1)
 ```
 
-## Sliding window
+### Sliding window
 
 problems about subarrays/substrings with constraints
 
@@ -86,7 +86,7 @@ def slidingwindow(s, k): # longest substring with at most k distinct characters
 		return best
 ```
 
-## Sorting + Sweep line
+### Sorting + Sweep line
 
 problems about interval overlap, scheduling, max concurrency, skyline
 
@@ -154,11 +154,11 @@ def prefixModulo(nums, k):
 		return False
 ```
 
-# Stack & Queue (v1)
+## Stack & Queue (v1)
 
-## Monotonic Stack
+### Monotonic Stack
 
-### NGE =
+#### NGE =
 
 ```python
 def nge(nums): # next greater elements
@@ -174,7 +174,7 @@ def nge(nums): # next greater elements
 		return res
 ```
 
-### Largest Rectangle in Histogram =
+#### Largest Rectangle in Histogram =
 
 ```python
 def largestRec(heights):
@@ -193,9 +193,9 @@ def largestRec(heights):
 		return res
 ```
 
-## Monotonic Queue
+### Monotonic Queue
 
-### Sliding Window Maximum ==
+#### Sliding Window Maximum ==
 
 ```python
 def slidingWindowMax(nums, k):
@@ -211,9 +211,9 @@ def slidingWindowMax(nums, k):
 		return res
 ```
 
-# Linked Lists
+## Linked Lists
 
-## Reverse Linked List
+### Reverse Linked List
 
 whole list 
 
@@ -262,9 +262,9 @@ def reversekGroup(head:ListNode, k) -> ListNode:
 				groupPrev = start
 ```
 
-## Fast & Slow Pointers
+### Fast & Slow Pointers
 
-### find middle
+#### find middle
 
 ```python
 def findMiddle(head: ListNode) -> ListNode:
@@ -275,7 +275,7 @@ def findMiddle(head: ListNode) -> ListNode:
 		return slow
 ```
 
-### cycle detection =
+#### cycle detection =
 
 ```python
 def cycleDetection(head: ListNode) -> bool:
@@ -288,7 +288,7 @@ def cycleDetection(head: ListNode) -> bool:
 		return False
 ```
 
-## Merge
+### Merge
 
 ```python
 def merge(l1, l2): # merge two sorted linked lists
@@ -304,7 +304,7 @@ def merge(l1, l2): # merge two sorted linked lists
 		return dummy.next
 ```
 
-## Split
+### Split
 
 ```python
 def split(head):
@@ -317,9 +317,9 @@ def split(head):
 		return head, slow
 ```
 
-# Trees & Graphs
+## Trees & Graphs
 
-## Tree’s Queue  & BFS
+### Tree’s Queue  & BFS
 
 ```python
 from collections import deque
@@ -364,7 +364,7 @@ def bfs(root, target):
 		return -1 # no path from root to target
 ```
 
-## Tree’s Stack & DFS
+### Tree’s Stack & DFS
 
 ```python
 def DFS(root, target):
@@ -386,7 +386,7 @@ def DFS(root, target):
     return False
 ```
 
-## Pre-order Traversal
+### Pre-order Traversal
 
 ```python
 def preorder(root):
@@ -403,7 +403,7 @@ def preorder(root):
 		return res
 ```
 
-## In-order Traversal
+### In-order Traversal
 
 ```python
 def inorder(root):
@@ -420,7 +420,7 @@ def inorder(root):
 		return res
 ```
 
-## Post-order Traversal
+### Post-order Traversal
 
 ```python
 def postorder(root):
@@ -439,7 +439,7 @@ def postorder(root):
 		return res
 ```
 
-## Lowest Common Ancestor ==
+### Lowest Common Ancestor ==
 
 lowest (deepest) node in tree that has both p and q as descendants
 
@@ -475,9 +475,9 @@ def lowestCommonAncestor(root, p, q): # binary tree iterative
 		return q
 ```
 
-## Topological sort ====
+### Topological sort ====
 
-### DFS based Topological Sort =====
+#### DFS based Topological Sort =====
 
 ```python
 def topo(numNodes, edges):
@@ -505,7 +505,7 @@ def topo(numNodes, edges):
 		return res[::-1]
 ```
 
-### BFS based Topological Sort - Kahn’s Algorithm =====
+#### BFS based Topological Sort - Kahn’s Algorithm =====
 
 ```python
 def topoKahn(numNodes, edges):
@@ -525,7 +525,7 @@ def topoKahn(numNodes, edges):
 								q.append(nei)
 ```
 
-## Shortest path - Dijkstra ====
+### Shortest path - Dijkstra ====
 
 ```python
 def dijkstra(n, edges, start):
@@ -546,7 +546,7 @@ def dijkstra(n, edges, start):
 		return dist
 ```
 
-## Shortest path - Bellman-Ford ====
+### Shortest path - Bellman-Ford ====
 
 ```python
 def bellmanFord(n, edges, start):
@@ -567,7 +567,7 @@ def bellmanFord(n, edges, start):
 		return dist
 ```
 
-## Disjoint Set Union ==
+### Disjoint Set Union ==
 
 Implementation with constructor, find, and union. using path compression and union by rank
 
@@ -634,7 +634,7 @@ class UnionFind: # 无size的版本
 
 ```
 
-## MST - Kruskal’s Algorithm ===
+### MST - Kruskal’s Algorithm ===
 
 Unionfind + seleced min edge from all edge, use union find to check if new edge would form a loop
 
@@ -654,7 +654,7 @@ def kruskal(n, edges):
 		return mstWeight, mstEdges
 ```
 
-## MST - Prim’s Algorithm =====
+### MST - Prim’s Algorithm =====
 
 find all points directly connected to the current mst, put all edges connect those points to current mst, and use min heap to add the edge to mst
 
@@ -679,7 +679,7 @@ def prim(graph, start = 0):
 		return totalCost, mstEdges
 ```
 
-## SPFA Algorithm =====
+### SPFA Algorithm =====
 
 (bellman-ford + queue optimization)
 
@@ -703,7 +703,7 @@ def spfa(n, edges, source = 0):
 		return dist
 ```
 
-# Binary Search
+## Binary Search
 
 ```python
 def binarySearch(nums, target): # 闭区间的做法
@@ -768,7 +768,7 @@ def binarySearch(nums, target): # 双开区间
     return -1
 ```
 
-# Backtracking
+## Backtracking
 
 回溯
 
@@ -787,7 +787,7 @@ def backtrack(candidate):
             remove(next_candidate)
 ```
 
-# Dynamic Programming —
+## Dynamic Programming —
 
 DP思路-核心三要素
 
@@ -797,13 +797,13 @@ DP思路-核心三要素
 
 定义好每个状态的含义，找到他们之间的转移关系，并设置好初始状态。
 
-## Linear DP
+### Linear DP
 
 (note, do I really need to list those examples or can I just genrealize linear DP)
 
 案例感觉有点重复，linear DP留一个应该就ok
 
-### House Robber =
+#### House Robber =
 
 ```python
 def houseRobber(nums):
@@ -818,7 +818,7 @@ def houseRobber(nums):
 		return dp[-1]
 ```
 
-### Climbing Stairs =
+#### Climbing Stairs =
 
 ```python
 def climbStairs(n):
@@ -830,7 +830,7 @@ def climbStairs(n):
 		return dp[n]
 ```
 
-### Stock =
+#### Stock =
 
 ```python
 def maxProfit(prices):
@@ -841,9 +841,9 @@ def maxProfit(prices):
 		return maxProfit
 ```
 
-## Knapsack (0/1, complete, multi)  —
+### Knapsack (0/1, complete, multi)  —
 
-### 0/1 Knapsack ==
+#### 0/1 Knapsack ==
 
 ```python
 def knapsack01(weights, values, W):
@@ -855,7 +855,7 @@ def knapsack01(weights, values, W):
 		return dp[W]
 ```
 
-### Complete Knapsack ==
+#### Complete Knapsack ==
 
 ```python
 def knapsackComplete(weights, values, W):
@@ -867,7 +867,7 @@ def knapsackComplete(weights, values, W):
 		return dp[W]
 ```
 
-### Multi Knapsack ==
+#### Multi Knapsack ==
 
 ```python
 def knapsackMulti(weights, values, counts, W):
@@ -888,7 +888,7 @@ def knapsackMulti(weights, values, counts, W):
 		return dp[W]
 ```
 
-## Interval DP - burst balloons ====
+### Interval DP - burst balloons ====
 
 state depends on splitting intervals into sub-intervals
 
@@ -905,11 +905,11 @@ def maxCoins(nums):
 		return dp[0][n - 1]
 ```
 
-## Sequence DP
+### Sequence DP
 
 comparing two sequences or subsequences
 
-### Longest Increasing Subsequence (LIS) ====
+#### Longest Increasing Subsequence (LIS) ====
 
 ```python
 def lengthOfLIS(nums):
@@ -921,7 +921,7 @@ def lengthOfLIS(nums):
 		return max(dp)
 ```
 
-### Longest Common Subsequence (LCS) =====
+#### Longest Common Subsequence (LCS) =====
 
 ```python
 def lcs(text1, text2):
@@ -936,7 +936,7 @@ def lcs(text1, text2):
 		return dp[m][n]
 ```
 
-### Edit Distance =====
+#### Edit Distance =====
 
 ```python
 def minDistance(word1, word2):
@@ -955,13 +955,13 @@ def minDistance(word1, word2):
 		return dp[m][n]
 ```
 
-# Heaps/ Priority Queue —
+## Heaps/ Priority Queue —
 
-# String Algorithms  —
+## String Algorithms  —
 
-## KMP (short template + failure array) ==
+### KMP (short template + failure array) ==
 
-## Rabin-Karp Algorithm ==
+### Rabin-Karp Algorithm ==
 
 ```python
 def rabin_karp(haystack: str, needle: str) -> int:
@@ -1002,9 +1002,9 @@ def rabin_karp(haystack: str, needle: str) -> int:
 
 ```
 
-# Bit Manipulation
+## Bit Manipulation
 
-## Subset enumeration ==
+### Subset enumeration ==
 
 ```python
 def subsetEnumeration(nums): # use bit mask return all possible subset
@@ -1017,7 +1017,7 @@ def subsetEnumeration(nums): # use bit mask return all possible subset
 		return res
 ```
 
-## Counting set bits
+### Counting set bits
 
 popcount, use lowbit to repeatedly remove the lowest set bit
 
@@ -1030,7 +1030,7 @@ def countBits(x):
 		return cnt
 ```
 
-## Fenwick Tree (BIT) ====
+### Fenwick Tree (BIT) ====
 
 Binary Indexed Tree
 
@@ -1050,9 +1050,9 @@ class BIT:
 				return s
 ```
 
-# Math
+## Math
 
-## Fast Power ===
+### Fast Power ===
 
 binary exponentiation with mod
 
@@ -1068,7 +1068,7 @@ def fastPow(base, exp, mod):
 		return res
 ```
 
-## Sive of Eratosthesnes ==
+### Sive of Eratosthesnes ==
 
 generate primes up to n
 
@@ -1083,7 +1083,7 @@ def sieve(n): # cross out multiples when finding
 		return [i for i, prime in enumerate(isPrime) if prime]
 ```
 
-## Extended Euclidean ====
+### Extended Euclidean ====
 
 for GCD & Bezout
 
@@ -1095,7 +1095,7 @@ def extendedEuclidean(a, b):
 		return (g, y1, x1 - (a // b) * y1)
 ```
 
-## Fermat’s Little Theorem =====
+### Fermat’s Little Theorem =====
 
 modular inverse 
 
@@ -1105,7 +1105,7 @@ def modinv(a, mod):
 		return fastPow(a, mod - 2, mod)
 ```
 
-## nCr Mod Prime =====
+### nCr Mod Prime =====
 
 combinatorics
 
@@ -1132,7 +1132,7 @@ def nCr(n, r):
     return fact[n] * invfact[r] % MOD * invfact[n-r] % MOD
 ```
 
-## Matrix Exponentiation
+### Matrix Exponentiation
 
 technique to calculate powers of a transition matrix quickly, solving linear recurrences (Fibonacci, Tribonacci, etc)
 
@@ -1159,11 +1159,11 @@ def matPow(M, power, mod = None):
 		return res
 ```
 
-# Engineering Nodes —
+## Engineering Nodes —
 
-## Code Style
+### Code Style
 
-### Naming
+#### Naming
 
 Functions → snake_case
 
@@ -1171,7 +1171,7 @@ Classes → PascalCase
 
 Constants → UPPER_SNAKE_CASE
 
-### Best Practives
+#### Best Practives
 
 Keep function short ( ≤ 30-40 lines ideally)
 
@@ -1181,9 +1181,9 @@ use docstrings for functions
 
 handle edge cases early
 
-## Common pitfalls checklist
+### Common pitfalls checklist
 
-### Mutable defaults
+#### Mutable defaults
 
 ```python
 def f(x, arr = []): ... # BAD
@@ -1191,27 +1191,27 @@ def f(x, arr = None):   # GOOD
 		if arr is None: arr = []
 ```
 
-### Recursion depth errors
+#### Recursion depth errors
 
 convert to iterative DP when depth  ~ 10 ^ 5
 
-### Shadowing built ins
+#### Shadowing built ins
 
 Don’t name variables “list”, “dict”, “id”, etc
 
-### Test cases not enough
+#### Test cases not enough
 
 Always test: empty input, single element, max constraints
 
-## Pytest Testing Usage
+### Pytest Testing Usage
 
 not applicable to leetcode
 
 use fixtures, parametrized tests, and exception testing
 
-# Interviews and Tools
+## Interviews and Tools
 
-## Interview Tips
+### Interview Tips
 
 Think out loud - explain reasoning step by step, even final code did not work, interviewer values clarity + approach
 
@@ -1219,8 +1219,8 @@ State invariants - mention what must stay true after each iteration or recursion
 
 Edge case first - 
 
-# Git Repo Notes
+## Git Repo Notes
 
-## maybe want
+### maybe want
 
 Z-function/Manacher, Fenwick tree, segment tree
