@@ -1,8 +1,5 @@
 # Leetcode Cheatsheet 
-
-List of algorithms that I incounter along practice with leetcode problems. 
-Some are just a note to remember, but some like DP logic and backtracking logic are pretty useful when you know the problem should use a specific algorithm but just forgot how to implement them. 
-
+A list of algorithms I encountered while practicing LeetCode problems. Some are simply notes for reference, but others—such as DP logic and backtracking—are especially useful when you recognize that a problem requires a specific algorithm but can’t quite recall how to implement it.
 == ：needs more practice, the more = the more practice needed
 
 ## Array and Strings
