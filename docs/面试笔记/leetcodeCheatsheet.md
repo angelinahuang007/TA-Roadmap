@@ -86,21 +86,45 @@ def twopt(nums, target): # find two num in sorted array that sum to target
 
 problems about subarrays/substrings with constraints
 
-```python
-def slidingwindow(s, k): # longest substring with at most k distinct characters
-		l = 0
-		freq = Counter()
-		best = 0
-		for r, ch in enumerate(s):
-				freq[ch] += 1
-				while len(freq) > k:
-						freq[s[l]] -= 1
-						if freq[s[l]] == 0:
-								del freq[s[l]]
-						l += 1
-				best = max(best, r - l + 1)
-		return best
-```
+=== "python"
+	```python
+	def slidingwindow(s, k): # longest substring with at most k distinct characters
+			l = 0
+			freq = Counter()
+			best = 0
+			for r, ch in enumerate(s):
+					freq[ch] += 1
+					while len(freq) > k:
+							freq[s[l]] -= 1
+							if freq[s[l]] == 0:
+									del freq[s[l]]
+							l += 1
+					best = max(best, r - l + 1)
+			return best
+	```
+=== "c++"
+	```cpp
+	int slidingwindow(const std::string& s, int k) {
+		int l = 0, best = 0;
+		std::unordered_map<char, int> freq;
+
+		for (int r = 0; r < s.size(); ++r) {
+			freq[s[r]]++;
+
+			while (freq.size() > k) {
+				freq[s[l]]--;
+				if (freq[s[l]] == 0) {
+					freq.erase(s[l]);
+				}
+				l++;
+			}
+
+			best = std::max(best, r - l + 1);
+		}
+
+		return best;
+	}
+	```
 
 ### Sorting + Sweep line
 
