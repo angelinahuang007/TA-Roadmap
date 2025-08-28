@@ -68,19 +68,37 @@ A list of algorithms I encountered while practicing LeetCode problems. Some are 
     ```
 ### Two Pointers
 
-```python
-def twopt(nums, target): # find two num in sorted array that sum to target
-		l, r = 0, len(nums) - 1
-		while l < r:
-				s = nums[l] + nums[r]
-				if s == target:
-						return (l, r)
-				elif s < target:
-						l += 1
-				else:
-						r -= 1
-		return (-1, -1)
-```
+=== "python"
+	```python
+	def twopt(nums, target): # find two num in sorted array that sum to target
+			l, r = 0, len(nums) - 1
+			while l < r:
+					s = nums[l] + nums[r]
+					if s == target:
+							return (l, r)
+					elif s < target:
+							l += 1
+					else:
+							r -= 1
+			return (-1, -1)
+	```
+=== "c++"
+	```cpp
+	pair<int, int> twopt(const vector<int>& nums, int target) {
+		int l = 0, r = nums.size() - 1;
+		while (l < r) {
+			int sum = nums[l] + nums[r];
+			if (sum == target) {
+				return {l, r};
+			} else if (sum < target) {
+				l++;
+			} else {
+				r--;
+			}
+		}
+		return {-1, -1};
+	}
+	```
 
 ### Sliding window
 
@@ -130,22 +148,47 @@ problems about subarrays/substrings with constraints
 
 problems about interval overlap, scheduling, max concurrency, skyline
 
-```python
-def sweepline(intervals):
-		events = []
-		for s, e in intervals:
-				events.append((s, 1))  # +1 when interval starts
-				events.append((e, -1)) # -1 when interval ends
-		
-		events.sort(key = lambda x: (x[0], x[1]))
-		
-		active = 0
-		overlap = 0
-		for _, delta in evnets:
-				active += delta
-				overlap = max(overlap, active)
-		return overlap
-```
+=== "python" 
+	```python
+	def sweepline(intervals):
+			events = []
+			for s, e in intervals:
+					events.append((s, 1))  # +1 when interval starts
+					events.append((e, -1)) # -1 when interval ends
+			
+			events.sort(key = lambda x: (x[0], x[1]))
+			
+			active = 0
+			overlap = 0
+			for _, delta in evnets:
+					active += delta
+					overlap = max(overlap, active)
+			return overlap
+	```
+=== "c++"
+	```cpp
+	int sweepline(const std::vector<std::pair<int, int>>& intervals) {
+		std::vector<std::pair<int, int>> events;
+		for (const auto& interval : intervals) {
+			events.emplace_back(interval.first, 1);   // +1 for start
+			events.emplace_back(interval.second, -1); // -1 for end
+		}
+
+		std::sort(events.begin(), events.end(), [](const std::pair<int, int>& a, const std::pair<int, int>& b) {
+			if (a.first == b.first)
+				return a.second < b.second;  // End before start if same time
+			return a.first < b.first;
+		});
+
+		int active = 0, overlap = 0;
+		for (const auto& [_, delta] : events) {
+			active += delta;
+			overlap = std::max(overlap, active);
+		}
+
+		return overlap;
+	}
+	```
 
 ## Hashing
 
