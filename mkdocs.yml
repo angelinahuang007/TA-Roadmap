@@ -44,7 +44,8 @@ markdown_extensions:
       permalink: true
   - pymdownx.tabbed:
       alternate_style: true
-
+  - pymdownx.details
+  
 plugins:
   - i18n:
       languages:
@@ -139,3 +140,4 @@ nav:
     #  - 论文推荐：论文推荐.md
     #  - 未分类资源：未分类资源.md
     - 贡献指南-- --: contributing.md
+    - 测试: test.md
