@@ -38,8 +38,15 @@
 ??? warning "warning"
     这里是隐藏的额外说明。
 
-???+ warning "warning+"
+??? warning "warning+"
     这里是隐藏的额外说明。
+    ??? note "note"
+        ## 测试层内层
+        heading测试
+        ??? info "info"
+            测试测试
+            ### 内层内层
+            heading测试2
 
 ## progress bar
 学习 MkDocs: ==70%==
