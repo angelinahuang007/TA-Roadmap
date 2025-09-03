@@ -26,6 +26,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+extra_css:
+  - assets/css/custom.css
 
 markdown_extensions:
   - attr_list
