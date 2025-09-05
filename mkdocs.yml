@@ -8,8 +8,10 @@ site_url: https://angelinahuang007.github.io/TA-Roadmap/
 theme:
   name: material
   features:
+    - navigation.tabs
     - navigation.sections
     - navigation.sidebar
+    - navigation.top
     - search.suggest
     - search.highlight
   language: zh
@@ -94,52 +96,49 @@ extra:
       name: Discord Community
 
 nav:
-  - 技术美术学习路线: 
-    - 前言-- --: index.md
-    - 核心技能-- --: 基础知识.md
-    #- 计算机基础-- --:
-    #  - 数据结构: 
-    #    - 数据结构总览: 计算机基础/数据结构/数据结构.md
-    #  - 算法: 计算机基础/算法/算法.md
-    #  - 编程语言: 计算机基础/编程语言/编程语言.md
-    #  - 计算机系统: 计算机基础/计算机系统/计算机系统.md
-    #  - 软件工程: 计算机基础/软件工程/软件工程.md
-    #  - 数学基础: 计算机基础/数学基础/数学基础.md
-    #- 艺术基础-- --: 
-    #  - 艺术基础: 艺术基础/艺术基础.md
-    #  - 配色理论: 艺术基础/配色/配色理论.md
-    #  - 构图原理: 艺术基础/构图原理/构图原理.md
-    #  - 设计原则: 艺术基础/设计原则/设计原则.md
-    #  - 视觉元素: 艺术基础/视觉元素/视觉元素.md
-    #  - 设计心理学: 艺术基础/设计心理学/设计心理学.md
-    #  - 数字设计: 艺术基础/数字设计/数字设计.md
-    #- 管线开发-- --: 
-    #  - 技术1: pipeline/pipeline.md
-    #  - 技术2: pipeline/pipeline.md
-    #- 着色器和图形-- --: 
-    #  - 技术1: shadersGraphics/shaders-and-graphics.md
-    #  - 技术2: shadersGraphics/shaders-and-graphics.md
-    #- 动画技术-- --: 
-    #  - 技术1: animation/animation.md
-    #  - 技术2: animation/animation.md
-    #- 特效制作-- --: 
-    #  - 技术1: vfx/vfx.md
-    #  - 技术2: vfx/vfx.md
-    #- 工具开发-- --: 
-      #- 技术1: tools/tools.md
-      #- 技术2: tools/tools.md
-    - 程序化生成-- --: 
+  - 首页: index.md
+  - 核心技能:
+    - 基础知识: 基础知识.md
+    - 计算机基础:
+      - 数据结构: 
+        - 数据结构: 计算机基础/数据结构/数据结构.md
+      - 算法: 计算机基础/算法/算法.md
+      - 编程语言: 计算机基础/编程语言/编程语言.md
+      - 计算机系统: 计算机基础/计算机系统/计算机系统.md
+      - 软件工程: 计算机基础/软件工程/软件工程.md
+      - 数学基础: 计算机基础/数学基础/数学基础.md
+    - 艺术基础:
+      - 艺术基础: 艺术基础/艺术基础.md
+      - 配色理论: 艺术基础/配色/配色理论.md
+      - 构图原理: 艺术基础/构图原理/构图原理.md
+      - 设计原则: 艺术基础/设计原则/设计原则.md
+      - 视觉元素: 艺术基础/视觉元素/视觉元素.md
+      - 设计心理学: 艺术基础/设计心理学/设计心理学.md
+      - 数字设计: 艺术基础/数字设计/数字设计.md
+  - 专业方向:
+    - 程序化生成:
       - Houdini: PCG/Houdini.md
       - Joy of Vex: PCG/Houdini - Joy of Vex.md
       - VEX: PCG/VEX.md
-    - 面试笔记:
-      - Leetcode: 面试笔记/leetcodeCheatsheet.md
-    #- 资源推荐-- --:
-    #  - 学习路径: 资源推荐/learning-path.md
-    #  - 社区: 资源推荐/community.md
-    #  - 工具和软件: 资源推荐/tools-software.md
-    #  - 好书推荐：好书推荐.md
-    #  - 论文推荐：论文推荐.md
-    #  - 未分类资源：未分类资源.md
-    - 贡献指南-- --: contributing.md
-    - 测试: test.md
+    - 着色器和图形:
+      - 着色器基础: shadersGraphics/shaders-and-graphics.md
+      - Substance Designer: shadersGraphics/Substance Academy Series_Substnace Designer.md
+    - 动画技术:
+      - 动画基础: animation/animation.md
+      - 高级动画: animation/animation2.md
+    - 特效制作:
+      - VFX基础: vfx/vfx.md
+    - 工具开发:
+      - 工具开发: tools/tools.md
+    - 管线开发:
+      - 管线基础: pipeline/pipeline.md
+  - 资源推荐:
+    - 学习路径: 资源推荐/learning-path.md
+    - 社区: 资源推荐/community.md
+    - 工具和软件: 资源推荐/tools-software.md
+    - 好书推荐: 资源推荐/好书推荐.md
+    - 论文推荐: 资源推荐/论文推荐.md
+    - 未分类资源: 资源推荐/未分类资源.md
+  - 面试准备:
+    - Leetcode: 面试笔记/leetcodeCheatsheet.md
+  - 贡献指南: contributing.md
