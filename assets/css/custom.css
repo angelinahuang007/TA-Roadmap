@@ -1,0 +1,42 @@
+/* Base container cleanup */
+.md-typeset .admonition,
+.md-typeset details {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0.2em 0.5em !important;
+  margin: 0.3em 0 !important;
+}
+
+/* Title area: plain bold clickable text */
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background: none !important;
+  border: none !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  padding: 0.2em 0 !important;
+  color: inherit !important;
+  display: list-item !important;
+  list-style: none !important; /* remove default list arrow */
+}
+
+/* Remove Material icons */
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* White clean arrow */
+.md-typeset summary::marker {
+  color: #fff !important;  /* always white arrow */
+  font-size: 0.9em;
+}
+
+/* Nested dropdowns: indented but no border line */
+.md-typeset details details {
+  margin-left: 1.2em !important;   /* indent nested dropdown */
+  border-left: none !important;    /* remove vertical line */
+  padding-left: 0.5em !important;  /* keep some spacing */
+}
