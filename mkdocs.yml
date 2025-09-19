@@ -97,6 +97,7 @@ plugins:
         fundamentals: 基础知识
         readguide: 阅读指南
         test: 测试页面
+        python-packages: python包
     - locale: en
       name: English
       build: true
@@ -105,9 +106,9 @@ plugins:
     - zh
     - en
 - redirects:
-    redirect_maps: 
-      cheatsheet/index.md: "03_interview-prep/001_leetcodeCheatsheet.md"
-      en/cheatsheet/index.md: "03_interview-prep/001_leetcodeCheatsheet.en.md"
+    redirect_maps:
+      cheatsheet/index.md: 03_interview-prep/001_leetcodeCheatsheet.md
+      en/cheatsheet/index.md: 03_interview-prep/001_leetcodeCheatsheet.en.md
 extra:
   social:
   - icon: fontawesome/brands/github
@@ -127,14 +128,18 @@ nav:
   - computer-science:
     - math: 02_core-skills/002_computer-science/0001_math.md
     - dataStructure: 02_core-skills/002_computer-science/0002_dataStructure.md
+- tools:
+  - tools: 03_tools/001_tools.md
+  - blender: 03_tools/002_blender.md
+  - python-packages: 03_tools/003_python-packages.md
 - interview-prep:
-  - leetcodeCheatsheet: 03_interview-prep/001_leetcodeCheatsheet.md
+  - leetcodeCheatsheet: 04_interview-prep/001_leetcodeCheatsheet.md
 - resources:
-  - bookrec: 04_resources/001_bookrec.md
-  - papers: 04_resources/002_papers.md
-  - paths: 04_resources/003_paths.md
-  - toolsnsoftware: 04_resources/004_toolsnsoftware.md
-  - community: 04_resources/005_community.md
-  - uncategorized: 04_resources/006_uncategorized.md
+  - bookrec: 05_resources/001_bookrec.md
+  - papers: 05_resources/002_papers.md
+  - paths: 05_resources/003_paths.md
+  - toolsnsoftware: 05_resources/004_toolsnsoftware.md
+  - community: 05_resources/005_community.md
+  - uncategorized: 05_resources/006_uncategorized.md
 - specializations:
-  - procedural-generation: 05_specializations/001_procedural-generation.md
+  - procedural-generation: 06_specializations/001_procedural-generation.md

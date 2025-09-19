@@ -39,8 +39,8 @@ jobs:
     
     - name: Update MkDocs navigation
       run: |
-        python scripts/update_mkdocs.py
-    
+        python update_navigation.py
+      
     - name: Check for changes
       id: verify-changed-files
       run: |
