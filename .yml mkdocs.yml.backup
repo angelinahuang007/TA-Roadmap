@@ -1,0 +1,274 @@
+[1mdiff --git a/mkdocs.yml b/mkdocs.yml[m
+[1mindex 389a994..ec04439 100644[m
+[1m--- a/mkdocs.yml[m
+[1m+++ b/mkdocs.yml[m
+[36m@@ -1,144 +1,141 @@[m
+ site_name: Technical Artist Roadmap[m
+[31m-site_description: A comprehensive guide and resource collection for aspiring Technical Artists in the game industry[m
+[32m+[m[32msite_description: A comprehensive guide and resource collection for aspiring Technical[m
+[32m+[m[32m  Artists in the game industry[m
+ site_author: TA-Roadmap Contributors[m
+ repo_url: https://github.com/angelinahuang007/TA-Roadmap[m
+ repo_name: TA-Roadmap[m
+ site_url: https://angelinahuang007.github.io/TA-Roadmap/[m
+[31m-[m
+ theme:[m
+   name: material[m
+   features:[m
+[31m-    - navigation.tabs[m
+[31m-    - navigation.sections[m
+[31m-    - navigation.sidebar[m
+[31m-    - navigation.top[m
+[31m-    - search.suggest[m
+[31m-    - search.highlight[m
+[32m+[m[32m  - navigation.tabs[m
+[32m+[m[32m  - navigation.sections[m
+[32m+[m[32m  - navigation.sidebar[m
+[32m+[m[32m  - navigation.top[m
+[32m+[m[32m  - search.suggest[m
+[32m+[m[32m  - search.highlight[m
+   language: zh[m
+   palette:[m
+[31m-    - scheme: slate[m
+[31m-      primary: indigo[m
+[31m-      accent: indigo[m
+[31m-      toggle:[m
+[31m-        icon: material/brightness-4[m
+[31m-        name: Switch to light mode[m
+[31m-    - scheme: default[m
+[31m-      primary: indigo[m
+[31m-      accent: indigo[m
+[31m-      toggle:[m
+[31m-        icon: material/brightness-7[m
+[31m-        name: Switch to dark mode[m
+[32m+[m[32m  - scheme: slate[m
+[32m+[m[32m    primary: indigo[m
+[32m+[m[32m    accent: indigo[m
+[32m+[m[32m    toggle:[m
+[32m+[m[32m      icon: material/brightness-4[m
+[32m+[m[32m      name: Switch to light mode[m
+[32m+[m[32m  - scheme: default[m
+[32m+[m[32m    primary: indigo[m
+[32m+[m[32m    accent: indigo[m
+[32m+[m[32m    toggle:[m
+[32m+[m[32m      icon: material/brightness-7[m
+[32m+[m[32m      name: Switch to dark mode[m
+ extra_css:[m
+[31m-  - assets/css/custom.css[m
+[31m-[m
+[32m+[m[32m- assets/css/custom.css[m
+ markdown_extensions:[m
+[31m-  - attr_list[m
+[31m-  - md_in_html[m
+[31m-  - pymdownx.highlight[m
+[31m-  - pymdownx.superfences[m
+[31m-  - pymdownx.tasklist:[m
+[31m-      custom_checkbox: true[m
+[31m-  [m
+[31m-  - pymdownx.emoji:[m
+[31m-      emoji_generator: 'svg'[m
+[31m-[m
+[31m-  - admonition[m
+[31m-  - footnotes[m
+[31m-  - toc:[m
+[31m-      permalink: true[m
+[31m-  - pymdownx.tabbed:[m
+[31m-      alternate_style: true[m
+[31m-  - pymdownx.details[m
+[31m-  [m
+[32m+[m[32m- attr_list[m
+[32m+[m[32m- md_in_html[m
+[32m+[m[32m- pymdownx.highlight[m
+[32m+[m[32m- pymdownx.superfences[m
+[32m+[m[32m- pymdownx.tasklist:[m
+[32m+[m[32m    custom_checkbox: true[m
+[32m+[m[32m- pymdownx.emoji:[m
+[32m+[m[32m    emoji_generator: svg[m
+[32m+[m[32m- admonition[m
+[32m+[m[32m- footnotes[m
+[32m+[m[32m- toc:[m
+[32m+[m[32m    permalink: true[m
+[32m+[m[32m- pymdownx.tabbed:[m
+[32m+[m[32m    alternate_style: true[m
+[32m+[m[32m- pymdownx.details[m
+ plugins:[m
+[31m-  - i18n:[m
+[31m-      languages:[m
+[31m-        - locale: zh[m
+[31m-          default: true[m
+[31m-          name: 简体中文[m
+[31m-          build: true[m
+[31m-        - locale: en[m
+[31m-          name: English[m
+[31m-          build: true[m
+[31m-          nav_translations:[m
+[31m-            首页: Home[m
+[31m-            入门指南: Getting Started[m
+[31m-            前言: Preface[m
+[31m-            核心技能: Core Skills[m
+[31m-            专业方向: Specializations[m
+[31m-            管线开发: Pipeline[m
+[31m-            着色器和图形: Shaders & Graphics[m
+[31m-            动画技术: Animation[m
+[31m-            特效制作: VFX[m
+[31m-            工具开发: Tools[m
+[31m-            资源: Resources[m
+[31m-            学习路径: Learning Path[m
+[31m-            社区: Community[m
+[31m-            工具和软件: Tools & Software[m
+[31m-            贡献指南: Contributing[m
+[31m-  - search:[m
+[31m-      lang:[m
+[31m-        - zh[m
+[31m-        - en[m
+[31m-  - redirects:[m
+[31m-      redirect_maps:[m
+[31m-        cheatsheet/index.md: "面试笔记/leetcodeCheatsheet.md"[m
+[31m-        # If you keep language prefixes in URLs, add explicit per-lang aliases:[m
+[31m-        en/cheatsheet/index.md: "/面试笔记/leetcodeCheatsheet.en.md"[m
+[31m-        zh/cheatsheet/index.md: "面试笔记/leetcodeCheatsheet.md"[m
+[32m+[m[32m- i18n:[m
+[32m+[m[32m    languages:[m
+[32m+[m[32m    - locale: zh[m
+[32m+[m[32m      default: true[m
+[32m+[m[32m      name: 简体中文[m
+[32m+[m[32m      build: true[m
+[32m+[m[32m    - locale: en[m
+[32m+[m[32m      name: English[m
+[32m+[m[32m      build: true[m
+[32m+[m[32m      nav_translations:[m
+[32m+[m[32m        首页: Home[m
+[32m+[m[32m        核心技能: Core Skills[m
+[32m+[m[32m        专业方向: Specializations[m
+[32m+[m[32m        资源推荐: Resources[m
+[32m+[m[32m        面试准备: Interview Preparation[m
+[32m+[m[32m        贡献指南: Contributing Guide[m
+[32m+[m[32m        基础知识: Fundamentals[m
+[32m+[m[32m        程序化生成: Procedural Generation[m
+[32m+[m[32m        着色器和图形: Shaders & Graphics[m
+[32m+[m[32m        动画技术: Animation Technology[m
+[32m+[m[32m        特效制作: VFX Production[m
+[32m+[m[32m        工具开发: Tool Development[m
+[32m+[m[32m        管线开发: Pipeline Development[m
+[32m+[m[32m        学习路径: Learning Path[m
+[32m+[m[32m        社区: Community[m
+[32m+[m[32m        工具和软件: Tools & Software[m
+[32m+[m[32m        好书推荐: Book Recommendations[m
+[32m+[m[32m        论文推荐: Paper Recommendations[m
+[32m+[m[32m        未分类资源: Miscellaneous Resources[m
+[32m+[m[32m        Leetcode: LeetCode[m
+[32m+[m[32m- search:[m
+[32m+[m[32m    lang:[m
+[32m+[m[32m    - zh[m
+[32m+[m[32m    - en[m
+[32m+[m[32m- redirects:[m
+[32m+[m[32m    redirect_maps:[m
+[32m+[m[32m      cheatsheet/index.md: 面试笔记/leetcodeCheatsheet.md[m
+[32m+[m[32m      en/cheatsheet/index.md: /面试笔记/leetcodeCheatsheet.en.md[m
+[32m+[m[32m      zh/cheatsheet/index.md: 面试笔记/leetcodeCheatsheet.md[m
+ extra:[m
+   social:[m
+[31m-    - icon: fontawesome/brands/github[m
+[31m-      link: https://github.com/angelina007huang/TA-Roadmap[m
+[31m-      name: GitHub Repository[m
+[31m-    - icon: fontawesome/brands/discord[m
+[31m-      link: https://discord.gg/tech-art[m
+[31m-      name: Discord Community[m
+[31m-[m
+[32m+[m[32m  - icon: fontawesome/brands/github[m
+[32m+[m[32m    link: https://github.com/angelina007huang/TA-Roadmap[m
+[32m+[m[32m    name: GitHub Repository[m
+[32m+[m[32m  - icon: fontawesome/brands/discord[m
+[32m+[m[32m    link: https://discord.gg/tech-art[m
+[32m+[m[32m    name: Discord Community[m
+ nav:[m
+[31m-  - 首页: index.md[m
+[31m-  - 核心技能:[m
+[31m-    - 基础知识: 基础知识.md[m
+[31m-    - 计算机基础:[m
+[31m-      - 数据结构: [m
+[31m-        - 数据结构: 计算机基础/数据结构/数据结构.md[m
+[31m-      - 算法: 计算机基础/算法/算法.md[m
+[31m-      - 编程语言: 计算机基础/编程语言/编程语言.md[m
+[31m-      - 计算机系统: 计算机基础/计算机系统/计算机系统.md[m
+[31m-      - 软件工程: 计算机基础/软件工程/软件工程.md[m
+[31m-      - 数学基础: 计算机基础/数学基础/数学基础.md[m
+[31m-    - 艺术基础:[m
+[31m-      - 艺术基础: 艺术基础/艺术基础.md[m
+[31m-      - 配色理论: 艺术基础/配色/配色理论.md[m
+[31m-      - 构图原理: 艺术基础/构图原理/构图原理.md[m
+[31m-      - 设计原则: 艺术基础/设计原则/设计原则.md[m
+[31m-      - 视觉元素: 艺术基础/视觉元素/视觉元素.md[m
+[31m-      - 设计心理学: 艺术基础/设计心理学/设计心理学.md[m
+[31m-      - 数字设计: 艺术基础/数字设计/数字设计.md[m
+[31m-  - 专业方向:[m
+[31m-    - 程序化生成:[m
+[31m-      - Houdini: PCG/Houdini.md[m
+[31m-      - Joy of Vex: PCG/Houdini - Joy of Vex.md[m
+[31m-      - VEX: PCG/VEX.md[m
+[31m-    - 着色器和图形:[m
+[31m-      - 着色器基础: shadersGraphics/shaders-and-graphics.md[m
+[31m-      - Substance Designer: shadersGraphics/Substance Academy Series_Substnace Designer.md[m
+[31m-    - 动画技术:[m
+[31m-      - 动画基础: animation/animation.md[m
+[31m-      - 高级动画: animation/animation2.md[m
+[31m-    - 特效制作:[m
+[31m-      - VFX基础: vfx/vfx.md[m
+[31m-    - 工具开发:[m
+[31m-      - 工具开发: tools/tools.md[m
+[31m-    - 管线开发:[m
+[31m-      - 管线基础: pipeline/pipeline.md[m
+[31m-  - 资源推荐:[m
+[31m-    - 学习路径: 资源推荐/learning-path.md[m
+[31m-    - 社区: 资源推荐/community.md[m
+[31m-    - 工具和软件: 资源推荐/tools-software.md[m
+[31m-    - 好书推荐: 资源推荐/好书推荐.md[m
+[31m-    - 论文推荐: 资源推荐/论文推荐.md[m
+[31m-    - 未分类资源: 资源推荐/未分类资源.md[m
+[31m-  - 面试准备:[m
+[31m-    - Leetcode: 面试笔记/leetcodeCheatsheet.md[m
+[31m-  - 贡献指南: contributing.md[m
+[32m+[m[32m- 首页: index.md[m
+[32m+[m[32m- 核心技能:[m
+[32m+[m[32m  - 基础知识: 基础知识.md[m
+[32m+[m[32m  - 计算机基础:[m
+[32m+[m[32m    - 计算机基础: 计算机基础/计算机基础.md[m
+[32m+[m[32m    - 数据结构: 计算机基础/数据结构/数据结构.md[m
+[32m+[m[32m    - 算法: 计算机基础/算法/算法.md[m
+[32m+[m[32m    - 编程语言: 计算机基础/编程语言/编程语言.md[m
+[32m+[m[32m    - 计算机系统: 计算机基础/计算机系统/计算机系统.md[m
+[32m+[m[32m    - 软件工程: 计算机基础/软件工程/软件工程.md[m
+[32m+[m[32m    - 数学基础: 计算机基础/数学基础/数学基础.md[m
+[32m+[m[32m  - 艺术基础:[m
+[32m+[m[32m    - 艺术基础: 艺术基础/艺术基础.md[m
+[32m+[m[32m    - 配色理论: 艺术基础/配色/配色理论.md[m
+[32m+[m[32m    - 构图原理: 艺术基础/构图原理/构图原理.md[m
+[32m+[m[32m    - 设计原则: 艺术基础/设计原则/设计原则.md[m
+[32m+[m[32m    - 视觉元素: 艺术基础/视觉元素/视觉元素.md[m
+[32m+[m[32m    - 设计心理学: 艺术基础/设计心理学/设计心理学.md[m
+[32m+[m[32m    - 数字设计: 艺术基础/数字设计/数字设计.md[m
+[32m+[m[32m- 专业方向:[m
+[32m+[m[32m  - 程序化生成:[m
+[32m+[m[32m    - Houdini   joy of vex: PCG/Houdini - Joy of Vex.md[m
+[32m+[m[32m    - Houdini: PCG/Houdini.md[m
+[32m+[m[32m    - vex: PCG/vex.md[m
+[32m+[m[32m  - 着色器和图形:[m
+[32m+[m[32m    - Substance academy series Substnace designer: shadersGraphics/Substance Academy[m
+[32m+[m[32m        Series_Substnace Designer.md[m
+[32m+[m[32m    - Shaders And Graphics: shadersGraphics/shaders-and-graphics.md[m
+[32m+[m[32m  - 动画技术:[m
+[32m+[m[32m    - Animation: animation/animation.md[m
+[32m+[m[32m    - animation2: animation/animation2.md[m
+[32m+[m[32m  - 特效制作: vfx/vfx.md[m
+[32m+[m[32m  - 工具开发: tools/tools.md[m
+[32m+[m[32m  - 管线开发: pipeline/pipeline.md[m
+[32m+[m[32m- 资源推荐:[m
+[32m+[m[32m  - community: 资源推荐/community.md[m
+[32m+[m[32m  - Learning Path: 资源推荐/learning-path.md[m
+[32m+[m[32m  - Tools Software: 资源推荐/tools-software.md[m
+[32m+[m[32m  - 好书推荐: 资源推荐/好书推荐.md[m
+[32m+[m[32m  - 未分类资源: 资源推荐/未分类资源.md[m
+[32m+[m[32m  - 论文推荐: 资源推荐/论文推荐.md[m
+[32m+[m[32m- 面试准备:[m
+[32m+[m[32m  - Leetcode: 面试笔记/leetcodeCheatsheet.md[m
+[32m+[m[32m- 贡献指南: contributing.md[m

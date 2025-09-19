@@ -4,141 +4,137 @@ site_author: TA-Roadmap Contributors
 repo_url: https://github.com/angelinahuang007/TA-Roadmap
 repo_name: TA-Roadmap
 site_url: https://angelinahuang007.github.io/TA-Roadmap/
-
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.sidebar
-    - navigation.top
-    - search.suggest
-    - search.highlight
+  - navigation.tabs
+  - navigation.sections
+  - navigation.sidebar
+  - navigation.top
+  - search.suggest
+  - search.highlight
   language: zh
   palette:
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
 extra_css:
-  - assets/css/custom.css
-
+- assets/css/custom.css
 markdown_extensions:
-  - attr_list
-  - md_in_html
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  
-  - pymdownx.emoji:
-      emoji_generator: 'svg'
-
-  - admonition
-  - footnotes
-  - toc:
-      permalink: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.details
-  
+- attr_list
+- md_in_html
+- pymdownx.highlight
+- pymdownx.superfences
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.emoji:
+    emoji_generator: svg
+- admonition
+- footnotes
+- toc:
+    permalink: true
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.details
 plugins:
-  - i18n:
-      languages:
-        - locale: zh
-          default: true
-          name: 简体中文
-          build: true
-        - locale: en
-          name: English
-          build: true
-          nav_translations:
-            首页: Home
-            入门指南: Getting Started
-            前言: Preface
-            核心技能: Core Skills
-            专业方向: Specializations
-            管线开发: Pipeline
-            着色器和图形: Shaders & Graphics
-            动画技术: Animation
-            特效制作: VFX
-            工具开发: Tools
-            资源: Resources
-            学习路径: Learning Path
-            社区: Community
-            工具和软件: Tools & Software
-            贡献指南: Contributing
-  - search:
-      lang:
-        - zh
-        - en
-  - redirects:
-      redirect_maps:
-        cheatsheet/index.md: "面试笔记/leetcodeCheatsheet.md"
-        # If you keep language prefixes in URLs, add explicit per-lang aliases:
-        en/cheatsheet/index.md: "/面试笔记/leetcodeCheatsheet.en.md"
-        zh/cheatsheet/index.md: "面试笔记/leetcodeCheatsheet.md"
+- i18n:
+    languages:
+    - locale: zh
+      default: true
+      name: 简体中文
+      build: true
+      nav_translations:
+        index: 首页
+        Home: 首页
+        getting-started: 入门指南
+        core-skills: 核心技能
+        interview-prep: 面试准备
+        specializations: 专业方向
+        resources: 资源推荐
+        art-fundamentals: 艺术基础
+        computer-science: 计算机基础
+        digital-design: 数字设计
+        composition: 构图原理
+        design-principles: 设计原则
+        visual-elements: 视觉元素
+        design-psychology: 设计心理学
+        color-theory: 配色理论
+        mathematics: 数学基础
+        data-structures: 数据结构
+        algorithms: 算法
+        programming-languages: 编程语言
+        computer-systems: 计算机系统
+        software-engineering: 软件工程
+        procedural-generation: 程序化生成
+        shaders-and-graphics: 着色器和图形
+        animation: 动画技术
+        vfx: 特效制作
+        tools: 工具开发
+        pipeline: 管线开发
+        learning-path: 学习路径
+        community: 社区
+        tools-software: 工具和软件
+        bookrec: 好书推荐
+        papers: 论文推荐
+        uncategorized: 未分类资源
+        start: 开始
+        digitalDesign: 数字设计
+        math: 数学
+        dataStructure: 数据结构
+        leetcodeCheatsheet: Leetcode速查表
+        toolsnsoftware: 工具和软件
+        paths: 学习路径
+        contributing: 贡献指南
+        fundamentals: 基础知识
+        readguide: 阅读指南
+        test: 测试页面
+    - locale: en
+      name: English
+      build: true
+- search:
+    lang:
+    - zh
+    - en
+- redirects:
+    redirect_maps: 
+      cheatsheet/index.md: "03_interview-prep/001_leetcodeCheatsheet.md"
+      en/cheatsheet/index.md: "03_interview-prep/001_leetcodeCheatsheet.en.md"
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/angelina007huang/TA-Roadmap
-      name: GitHub Repository
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/tech-art
-      name: Discord Community
-
+  - icon: fontawesome/brands/github
+    link: https://github.com/angelina007huang/TA-Roadmap
+    name: GitHub Repository
+  - icon: fontawesome/brands/discord
+    link: https://discord.gg/tech-art
+    name: Discord Community
 nav:
-  - 首页: index.md
-  - 核心技能:
-    - 基础知识: 基础知识.md
-    - 计算机基础:
-      - 数据结构: 
-        - 数据结构: 计算机基础/数据结构/数据结构.md
-      - 算法: 计算机基础/算法/算法.md
-      - 编程语言: 计算机基础/编程语言/编程语言.md
-      - 计算机系统: 计算机基础/计算机系统/计算机系统.md
-      - 软件工程: 计算机基础/软件工程/软件工程.md
-      - 数学基础: 计算机基础/数学基础/数学基础.md
-    - 艺术基础:
-      - 艺术基础: 艺术基础/艺术基础.md
-      - 配色理论: 艺术基础/配色/配色理论.md
-      - 构图原理: 艺术基础/构图原理/构图原理.md
-      - 设计原则: 艺术基础/设计原则/设计原则.md
-      - 视觉元素: 艺术基础/视觉元素/视觉元素.md
-      - 设计心理学: 艺术基础/设计心理学/设计心理学.md
-      - 数字设计: 艺术基础/数字设计/数字设计.md
-  - 专业方向:
-    - 程序化生成:
-      - Houdini: PCG/Houdini.md
-      - Joy of Vex: PCG/Houdini - Joy of Vex.md
-      - VEX: PCG/VEX.md
-    - 着色器和图形:
-      - 着色器基础: shadersGraphics/shaders-and-graphics.md
-      - Substance Designer: shadersGraphics/Substance Academy Series_Substnace Designer.md
-    - 动画技术:
-      - 动画基础: animation/animation.md
-      - 高级动画: animation/animation2.md
-    - 特效制作:
-      - VFX基础: vfx/vfx.md
-    - 工具开发:
-      - 工具开发: tools/tools.md
-    - 管线开发:
-      - 管线基础: pipeline/pipeline.md
-  - 资源推荐:
-    - 学习路径: 资源推荐/learning-path.md
-    - 社区: 资源推荐/community.md
-    - 工具和软件: 资源推荐/tools-software.md
-    - 好书推荐: 资源推荐/好书推荐.md
-    - 论文推荐: 资源推荐/论文推荐.md
-    - 未分类资源: 资源推荐/未分类资源.md
-  - 面试准备:
-    - Leetcode: 面试笔记/leetcodeCheatsheet.md
-  - 贡献指南: contributing.md
+- Home: index.md
+- getting-started:
+  - start: 01_getting-started/001_start/verystart.md
+- core-skills:
+  - art-fundamentals:
+    - digitalDesign: 02_core-skills/001_art-fundamentals/0001_digitalDesign.md
+    - composition: 02_core-skills/001_art-fundamentals/0002_composition.md
+  - computer-science:
+    - math: 02_core-skills/002_computer-science/0001_math.md
+    - dataStructure: 02_core-skills/002_computer-science/0002_dataStructure.md
+- interview-prep:
+  - leetcodeCheatsheet: 03_interview-prep/001_leetcodeCheatsheet.md
+- resources:
+  - bookrec: 04_resources/001_bookrec.md
+  - papers: 04_resources/002_papers.md
+  - paths: 04_resources/003_paths.md
+  - toolsnsoftware: 04_resources/004_toolsnsoftware.md
+  - community: 04_resources/005_community.md
+  - uncategorized: 04_resources/006_uncategorized.md
+- specializations:
+  - procedural-generation: 05_specializations/001_procedural-generation.md
